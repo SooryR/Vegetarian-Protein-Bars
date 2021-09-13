@@ -1,0 +1,335 @@
+<html>
+    <head>
+        <meta charset=”utf-8” />
+        <title>Plant-Protein bar review</title>
+        <style>
+            html {
+                scroll-behavior: smooth;
+                background-color: rgba(137, 137, 137, 0.557);
+            }
+
+            nav {
+                height: 75px;
+                width: 100%;
+                
+            }
+
+            .center a {
+                margin-left: 10px;
+                border-style: solid;
+                color: rgb(0, 0, 0);
+                border-color: rgb(255, 255, 255);
+                padding: 10px 10px;
+                text-decoration: none;
+                font-size: 25;
+            }
+
+            .center {
+                display: inline-block;
+                margin-right: 22%;
+                vertical-align: middle
+            }
+
+            .left {
+                display: inline-block;
+                margin-right: 24%;
+                margin-left: 5%;
+                vertical-align: middle
+            }
+
+            .right {
+                display: inline-block;
+                vertical-align: middle
+            }
+
+            .topbody {
+                position: relative;
+                height: 700px;
+                width: 100%;
+                margin-bottom: 100px;
+            }
+
+            .topbody h1 {
+                color: beige;
+                background-color: black;
+                font-size: 50;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .intro {
+                height: 800px;
+                width: 100%;
+                margin-bottom: 100px;
+            }
+
+            .cleft h2 {
+                font-size: 35;
+            }
+            .cleft p {
+                font-size: 15;
+            }
+
+            .cright h2 {
+                font-size: 40;
+            }
+            .cright p {
+                font-size: 20;
+            }
+
+            .title {
+                margin-bottom: 50px;
+                font-size: 45;
+                text-align: center;
+            }
+
+            .row {
+                margin-bottom: 50px;
+            }
+
+            .col {
+                display: inline-block;
+                min-width: 20px;
+            }
+
+            .cleft {
+                margin-left: 5%;
+                width: 40%;
+            }
+
+            .cright {
+                margin-left: 5%;
+                margin-right: 4%;
+                width: 40%;
+                position: absolute;
+            }
+
+            .review ul {
+                display: inline-table;
+            }
+
+            .review {
+                height: 200px;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 80px;
+            }
+
+            .barRankingSeclect {
+                text-align: center;
+                font-size: 20;
+                margin-bottom: 20px;
+            }
+
+            .barRanking {
+                text-align: center;
+            }
+
+            .barRanking ul {
+                display: inline-table;
+                width: 50%;
+            }
+
+            .barRanking ul li {
+                font-size: 20;
+            }
+
+            #Bar1 {
+                display: block;
+            }
+            #Bar2 {
+                display: none;
+            }
+            #Bar3 {
+                display: none;
+            }
+            #Bar4 {
+                display: none;
+            }
+            #Bar5 {
+                display: none;
+            }
+        </style>
+
+        <script>
+            function showBrand(element) {
+                document.getElementById('Bar1').style.display = 'none';
+                document.getElementById('Bar2').style.display = 'none';
+                document.getElementById('Bar3').style.display = 'none';
+                document.getElementById('Bar4').style.display = 'none';
+                document.getElementById('Bar5').style.display = 'none';
+
+                document.getElementById(element.value).style.display = 'block';
+            }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <div class="left">
+                <img src="./images/mylogo1.png" alt="" height="100%">
+            </div>
+            <div class="center">
+                <a href="#Introduction"><b>Introduction</b></a>
+                <a href="#Review"><b>Review</b></a>
+            </div>
+            <div class="right">
+                <a href="https://facebook.com"><img src="./images/facebooklogo.png" alt="" height="80%"></a>
+                <a href="https://twitter.com/?lang=en"><img src="./images/twitterlogo.png" alt="" height="80%"></a>
+                <a href="https://www.instagram.com"><img src="./images/instagramlogo.png" alt="" height="80%"></a>
+            </div>
+        </nav>
+    
+        <div class="topbody">
+            <img src="./images/topImage.jpg" alt="" width="100%" height="100%">
+            <h1>Plant-Protein Bar Review</h1>
+        </div>
+    
+        <div class="intro" id="Introduction">
+            <h1 class="title">Introduction</h1>
+            <div class="row">
+                <div class="col cleft">
+                    <img src="./images/plantBars.jpg" alt="" width="100%" height="40%">
+                </div>
+                <div class="col cright">
+                    <br><br>
+                    <h2>What are Plant-protein bars?</h2>
+                    <p>It's a tasty bar that's made with natural ingredients such as seeds, fruit, nut butters, and various vegan-friendly protein powders. With each wholesome bite, you feel a jolt of energy helping you throughout the day.</p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col cleft">
+                    <br><br>
+                    <h2>What are the benefits of plant-protein?</h2>
+                    <p>Why plant-protein is wonderful because it gives our body the required 9 essential amino acids which help the body provide the building blocks for healthy muscles and tissues.</p>
+                    <p>Plant-protein may also be beneficial for weight loss as it tends to be lower in calories and fat than animal proteins but higher in fiber and essential nutrients.</p>
+                    <p>Finally from a greenhouse gas emissions perspective it is significantly better for the environment and cost effective to eat plant-protein foods.</p>
+                </div>
+                <div class="col cright">
+                    <img src="./images/plantProtein.jpg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    
+        <div id="Review" class="review">
+            <h1 class="title">The review</h1>
+            <p>We gave each protein bars points on a scale of 1-10 (1 being poor, 10 being excellent) on:</p>
+            <ul>
+                <li>Accuracy of stated flavor</li>
+                <li>General taste</li>
+                <li>Texture</li>
+                <li>Overall thougts</li>
+            </ul>
+            <p>Then we tally up the points and give it a general score out of 40</p>
+        </div>
+        <br>
+        
+        <div class="barRankingSeclect">
+            <label for="barBrand">Choose the plant-protein bar: </label>
+            <select name="barBrand" id="brand" onchange="showBrand(this)">
+                <option value="Bar1">#1. R.E.D.D Protein Bar – Peanut Butter</option>
+                <option value="Bar2">#2. Truwomen Protein Bar – Smother Fudger Peanut Butter</option>
+                <option value="Bar3">#3. Aloha Protein Bar – Peanut Butter Chocolate Chip</option>
+                <option value="Bar4">#4. Truwomen Protein Bar – Zamn Good Zesty Lemon</option>
+                <option value="Bar5">#5. Good! Snacks Protein Bar – Lemon</option>
+            </select>
+        </div>
+    
+        <div>
+            <div id="Bar1" class="barRanking">
+                <img src="./images/bar1.jpg" alt="" width="70%" height="100%">
+                <h1>#1. R.E.D.D Protein Bar – Peanut Butter</h1>
+                <ul>
+                    <li>Accuracy of stated flavor: 9/10 - has a strong flavour of peanut butter</li>
+                    <li>Texture: 9/10 - holds together well and has a nice chewy texture</li>
+                    <li>General taste: 9/10 - tastes like good peanut butter chocolate</li>
+                    <li>Overall thougts: 9/10</li>
+                    <li>Where the protein is coming from: Peanuts, Pea protein, Organic hemp protein, Organic pumpkin seed protein, Organic chia seeds, Organic quinoa</li>
+                    <li>Grams of protein per bar: 11g</li>
+                    <li>Grams of suger per bar: 4g</li>
+                    <li>Approximate cost per bar: $2.99</li>
+                </ul>
+                <h3>General score: 36/40</h3>
+                <label>Link to buy: </label>
+                <a href="https://www.reddbar.com/collections/shop/products/redd-peanut-butter-plant-based-protein-bar">Click here</a>
+            </div>
+    
+            <div id="Bar2" class="barRanking">
+                <img src="./images/bar2.jpg" alt="" width="70%" height="100%">
+                <h1>#2. Truwomen Protein Bar – Smother Fudger Peanut Butter</h1>
+                <ul>
+                    <li>Accuracy of stated flavor: 8.5/10 - tastes like chocolate but the peanut flavor was barely detectable</li>
+                    <li>Texture: 9/10 - has a nice chewiness and bar holds together well</li>
+                    <li>General taste: 9/10 - chocolatey taste that is not too sweet or salty</li>
+                    <li>Overall thougts: 9/10</li>
+                    <li>Where the protein is coming from: Brown rice protein concentrate, Peanut butter</li>
+                    <li>Grams of protein per bar: 12g</li>
+                    <li>Grams of suger per bar: 6g</li>
+                    <li>Approximate cost per bar: $2.37</li>
+                </ul>
+                <h3>General score: 35.5/40</h3>
+                <label>Link to buy: </label>
+                <a href="https://www.amazon.com/d/Protein-Bars/TRUWOMEN-Protein-Smother-Non-GMO-Ingredients/B078WD6J7J?tag=minimalistbaker-20">Click here</a>
+            </div>
+    
+            <div id="Bar3" class="barRanking">
+                <img src="./images/bar3.jpg" alt="" width="70%" height="100%">
+                <h1>#3. Aloha Protein Bar – Peanut Butter Chocolate Chip</h1>
+                <ul>
+                    <li>Accuracy of stated flavor: 9/10 - salty peanut butter taste with some bites of sweet chocolate</li>
+                    <li>Texture: 7.5/10 - it has noticeable seeds and have to work to eat the bar</li>
+                    <li>General taste: 8/10 - tastes mostly of peanut butter</li>
+                    <li>Overall thougts: 8/10</li>
+                    <li>Where the protein is coming from: Organic peanuts, Organic brown rice protein, Organic pumpkin seed protein, Organic roasted pumpkin seeds</li>
+                    <li>Grams of protein per bar: 14g</li>
+                    <li>Grams of suger per bar: 4g</li>
+                    <li>Approximate cost per bar: $2.16</li>
+                </ul>
+                <h3>General score: 32.5/40</h3>
+                <label>Link to buy: </label>
+                <a href="https://www.amazon.ca/dp/B0178ENI4K?linkCode=gs2&tag=minimbaker-20">Click here</a>
+            </div>
+    
+            <div id="Bar4" class="barRanking">
+                <img src="./images/bar4.jpg" alt="" width="70%" height="100%">
+                <h1>#4. Truwomen Protein Bar – Zamn Good Zesty Lemon</h1>
+                <ul>
+                    <li>Accuracy of stated flavor: 8/10 - only the outside layer tastes of lemon</li>
+                    <li>Texture: 7/10 - too grainy</li>
+                    <li>General taste: 8/10 - the outside layer is the only tasty part of the bar</li>
+                    <li>Overall thougts: 7/10</li>
+                    <li>Where the protein is coming from: Brown rice concentrate, Roasted almond butter</li>
+                    <li>Grams of protein per bar: 12g</li>
+                    <li>Grams of suger per bar: 9g</li>
+                    <li>Approximate cost per bar: $2.50</li>
+                </ul>
+                <h3>General score: 30/40</h3>
+                <label>Link to buy: </label>
+                <a href="https://www.amazon.ca/dp/B079QNBT5V?linkCode=gs2&tag=minimbaker-20">Click here</a>
+            </div>
+    
+            <div id="Bar5" class="barRanking">
+                <img src="./images/bar5.jpg" alt="" width="70%" height="100%">
+                <h1>#5. Good! Snacks Protein Bar – Lemon</h1>
+                <ul>
+                    <li>Accuracy of stated flavor: 6/10 - a small taste of lemon</li>
+                    <li>Texture: 9/10 - slightly chewy, tender, and holds together well</li>
+                    <li>General taste: 7/10 - has a salty aftertaste</li>
+                    <li>Overall thougts: 7/10</li>
+                    <li>Where the protein is coming from: Brown rice concentrate, Roasted almond butter</li>
+                    <li>Grams of protein per bar: 15g</li>
+                    <li>Grams of suger per bar: 10g</li>
+                    <li>Approximate cost per bar: $2.42</li>
+                </ul>
+                <h3>General score: 29/40</h3>
+                <label>Link to buy: </label>
+                <a href="https://goodsnacks.com/products/lemon">Click here</a>
+            </div>
+        </div>
+        <br><br>
+    </body>
+
+
+</html>
